@@ -7,13 +7,17 @@
 }
 
 body{
-  background-color: rgba(47, 62, 192, 0.788);
+  background-color:rgba(255, 250, 230, 1);
 }
 
 .hero{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    /* background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3)); */
+    background: url(./images/brian-wangenheim-wTHQ-wMorp0-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     padding: 0 5%;
     display: flex;
@@ -24,6 +28,7 @@ body{
 h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    transition: all 0.50s ease;
 }
 nav{
     width: 100%;
@@ -128,14 +133,30 @@ nav ul li a {
     padding: 20px;
     box-sizing: border-box;
   }
-  
-  .left-section {
-    text-align: left;
+
+  .right-section img{
+    width: 100%;
+    height: 300;
   }
   
-  .right-section {
-    text-align: right;
-  }
+  .image-box {
+    width: 3000px; /* Width of the box */
+    height: 200px; /* Height of the box */
+    overflow: hidden; /* Ensures content outside the box is hidden */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image scales and covers the box without distortion */
+    /* Use object-fit: contain; if you want the entire image visible inside the box */
+}
+
+  
+/* 
   
   .video-container {
     position: relative;
@@ -149,7 +170,8 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-  }
+  } 
+  */
   
   p {
     margin-bottom: 10px;
