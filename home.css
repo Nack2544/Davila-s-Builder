@@ -6,6 +6,10 @@
     font-weight: 500px;
 }
 
+body{
+  background-color: rgba(47, 62, 192, 0.788);
+}
+
 .hero{
     width: 100%;
     height: 100vh;
